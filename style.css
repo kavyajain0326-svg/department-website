@@ -1,0 +1,161 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #6B1D2F; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.college-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    padding: 2px;
+}
+
+#university-title {
+    font-size: 14px;
+    color: #D4AF37; 
+    font-weight: bold;
+}
+
+#college-title {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#department-title {
+    font-size: 24px;
+    margin: 0
+}
+
+nav {
+    background-color: #4A1320; 
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    position: relative; 
+}
+
+.nav-link {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #4A1320;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.nav-item:hover .dropdown-content {
+    display: block;
+}
+
+.nav-link:hover, .dropdown-content a:hover {
+    background-color: #D4AF37;
+    color: black;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #6B1D2F;
+    border-bottom: 2px solid #D4AF37;
+    padding-bottom: 5px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #6B1D2F;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4A1320;
+    color: #D4AF37;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-container {
+        flex-direction: column;
+    }
+    .dropdown-content {
+        position: relative;
+    }
+}
